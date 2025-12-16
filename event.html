@@ -281,25 +281,30 @@
 
 
 <style>
-    .image-event {
+    /* ===== DEFAULT (DESKTOP) ===== */
+.image-event {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.pro-02-item {
+    margin-bottom: 25px;
 }
 
 .image-event:hover {
     transform: scale(1.05);
 }
 
-/* POPUP */
+/* ===== POPUP ===== */
 .img-popup {
     display: none;
     position: fixed;
-    z-index: 9999;
     inset: 0;
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
@@ -310,42 +315,107 @@
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
+    object-fit: contain;
     animation: zoomIn 0.3s ease;
 }
 
 /* Close Button */
 .close-popup {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 30px;
-    font-size: 40px;
+    font-size: 42px;
     color: #fff;
     cursor: pointer;
 }
 
-/* Animation */
-@keyframes zoomIn {
-    from {
-        transform: scale(0.7);
-        opacity: 0;
+/* ===== TABLET (768px and below) ===== */
+@media (max-width: 991px) {
+    .image-event {
+        height: 180px !important;
     }
-    to {
-        transform: scale(1);
-        opacity: 1;
+
+    .close-popup {
+        font-size: 36px;
+        top: 20px;
+        right: 25px;
     }
 }
 
-/* Mobile fix */
-@media (max-width: 576px) {
+@media (max-width: 1018px) {
     .image-event {
-        height: 360px;
+        height: 180px;
     }
-    .close-popup {
-        top: 15px;
-        right: 20px;
-        font-size: 32px;
+
+
+}
+@media (max-width: 917px) {
+    .image-event {
+        height: 355px;
     }
 }
+
+@media (max-width: 1199px) {
+    .image-event {
+        height: 245px;
+    }
+
+
+}
+ 
+
+/* ===== SMALL TABLET / LARGE MOBILE ===== */
+@media (max-width: 768px) {
+    .image-event {
+        height: 200px !important;
+    }
+
+    .pro-02-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 576px) {
+    .image-event {
+        height: 370px !important;
+        border-radius: 10px;
+    }
+
+    .img-popup {
+        padding: 15px;
+    }
+
+    .img-popup img {
+        max-width: 100%;
+        max-height: 85%;
+    }
+
+    .close-popup {
+        top: 15px;
+        right: 18px;
+        font-size: 30px;
+    }
+}
+
+/* ===== VERY SMALL DEVICES ===== */
+@media (max-width: 400px) {
+    .image-event {
+        height: 290px !important;
+    }
+}
+/* @media (max-width: 530px) {
+    .image-event {
+        height: 395px !important;
+    }
+} */
+
+/* ===== VERY SMALL DEVICES ===== */
+/* @media (max-width: 500px) {
+    .image-event {
+        height: 355px !important;
+    }
+} */
 
 </style>
 
