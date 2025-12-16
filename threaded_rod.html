@@ -250,6 +250,136 @@
         
         <!-- Blog Area start -->
 
+
+
+
+
+<style>
+     .section-title {
+      text-align: center;
+      background: #1c1c1c;
+      color: #fff;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 6px;
+    }
+
+    .table-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    .machine-image {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .machine-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+    /* Tablet view */
+@media (max-width: 992px) {
+    .machine-image img {
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+    .machine-image img {
+        border-radius: 12px;
+        margin-top: 15px;
+    }
+}
+
+    .specs {
+      flex: 1 1 50%;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow-x: auto;
+    }
+
+    .specs h2 {
+      background: #2a3843;
+      color: #fff;
+      padding: 12px;
+      font-size: 18px;
+      margin: 0;
+      border-radius: 5px 5px 0 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    table th {
+      background: #e80000;
+      color: #fff;
+    }
+
+    table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .machine-image, .specs {
+        flex: 1 1 100%;
+      }
+    }
+</style>
+
+<div class="section-title">Threaded Rod</div>
+
+  <div class="table-container">
+    <!-- Image Section -->
+    <div class="machine-image">
+      <img src="./assets/images/products/cnc production dev/a5.jpeg" alt="Threaded Rod">
+    </div>
+
+    <!-- Specs Table -->
+    <div class="specs">
+      <!-- <h2>CNC Machine</h2> -->
+      <table>
+        <tr>
+          <th>Sr. No</th>
+          <th>Grade</th>
+          <th>Size</th>
+        </tr>
+        <tr><td>1.</td><td>KPG5.8</td><td>M10x1000 <br>M12x1000 <br>M16x1000 <br>M20x1000 </td></tr>
+        <tr><td>2.</td><td>KPG5.8</td><td>M10x200 <br>M16x250</td></tr>
+        <tr><td>3.</td><td>KPG5.8</td><td>M10x1000 <br>M12x1000 <br>M16x1000 <br>M20x1000 </td></tr>
+        <tr><td>4.</td><td>KPG5.8</td><td>M10x200 <br> M16x250 <br> M24x260</td></tr>
+        <tr><td>5.</td><td>KPG8.8</td><td>M10x1000 <br> M12x1000 <br>M16x1000 <br>M24x1000 <br>
+              M10x250 <br>
+              M16x250</td></tr>
+        
+      </table>
+    </div>
+  </div>
         <!-- Blog Area end -->
 
         <!-- footer area start -->
